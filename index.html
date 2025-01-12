@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <title>Tech Indigo</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <!-- Logo -->
+       <!-- Inside the navbar-brand anchor tag -->
+<a class="navbar-brand" href="#">
+  <img src="Component 1.png" alt="Tech Indigo Logo" height="50">
+</a>
+
+      <a class="navbar-brand" href="#"></a>
+      <!-- Desktop View Buttons -->
+      <div class="d-none d-md-flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#events">Events</a>
+        <a class="nav-link" href="#guests">Guests</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </div>
+      <!-- Toggler for Smaller Resolutions -->
+      <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Offcanvas Menu for Smaller Screens -->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#guests">Guests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero-image-container">
+    <!-- <img src="Untitled_design-removebg-preview.png" alt="Hero Image" class="hero-image"> -->
+  <video autoplay loop muted class="hero-video" playsinline poster="video.jpg">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  </div>
+  <div class="text-container pt-5 mt-5">
+    <h1 class="main-title">SPECTRUM OF INNOVATIONS</h1>
+    <p class="sub-title">HOSTED BY SCHOOL OF INSTRUMENTATION, DAVV</p>
+  </div>
+  <div class="mission-container pt-4 mt-5" id="about">
+    <h2 class="mission-title pt-2">OUR MISSION</h2>
+    <div class="mission-grid pt-4 pb-5">
+      <!-- Innovate -->
+      <div class="mission-item" onmouseover="showText(this)" onmouseout="hideText(this)">
+        <img src="image (4).png" alt="Innovate" class="mission-icon">
+        <p class="mission-text ">INNOVATE</p>
+        
+      </div>
+      <!-- Collaborate -->
+      <div class="mission-item">
+        <img src="image (3).png" alt="Collaborate" class="mission-icon">
+        <p class="mission-text">COLLABORATE</p>
+      </div>
+      <!-- Elevate -->
+      <div class="mission-item">
+        <img src="image (2).png" alt="Elevate" class="mission-icon">
+        <p class="mission-text">ELEVATE</p>
+      </div>
+    </div>
+  </div>
+  <div class="responsive-div">
+    <img src="./images/WhatsApp_Image_2025-01-09_at_21.35.58_cbfd7395-removebg-preview.png" alt="Sample Image" class="responsive-image">
+    <div class="responsive-text">
+      <h1 class="h1">OUR OBJECTIVE</h1>
+      <p>
+       Showcasing Innovation: Highlight pioneering IoT projects and initiatives developed by students and professionals, demonstrating creativity, technical expertise, and real-world applicability.
+        Building Networks: Facilitate meaningful connections among students, mentors, industry experts, and renowned tech leaders to create opportunities for collaboration, mentorship, and long-term professional relationships.
+        Expanding IoT Horizons: Encourage participants to delve into diverse IoT applications, focusing on innovative solutions to societal, environmental, and industrial challenges, while exploring emerging technologies and trends in IoT.
+        Empowering Participants: Provide a comprehensive platform for skill enhancement, knowledge sharing, hands-on learning, and career advancement, enabling participants to stay competitive in the rapidly evolving IoT landscape.
+        Establish our department as a center of excellence in IoT education, research, and innovation, showcasing its leadership, achievements, and vision for future advancements in the field.</p>
+    </div>
+  </div>
+  
+<h1 class="h1 flex justify-content-center text-white mt-5 pt-4" id="events">Event Timeline</h1>
+  <div class="timeline">
+    <div class="line"></div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class="h3">Inauguration and Welcome Address</h3>
+        <p>Kick off the event with an inaugural ceremony that includes a welcome speech, a brief overview of the event’s mission, and a keynote introduction.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class='h3'>Panel Discussions</h3>
+        <p>Expert-led discussions focusing on IoT's role in various sectors.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class='h3'>Exhibition and Poster Presentation</h3>
+        <p>Showcase of IoT projects, research papers, and internship experiences by students and professionals.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class='h3'>Interactive Technical Stalls</h3>
+        <p>Hands-on interaction with cutting-edge IoT technologies, AI, and automation.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class='h3'>Keynote Sessions</h3>
+        <p>Insightful presentations by industry leaders on IoT, AI, and emerging technologies.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-trigger>
+      <div class="dot"></div>
+      <div class="content">
+        <h3 class='h3'>Closing Ceremony</h3>
+        <p>Celebrate achievements and summarize the key takeaways of the event</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="honeycomb-container" id="guests">
+    <h1 class="h1 text-white pb-5">MEET OUR PIONEER INNOVATORS</h1>
+    <div class="hex-row pt-5">
+      <div class="hexagon"><img src="./images/pulkitenfochip.jpeg" alt="Guest 1">
+        <div class="overlay">MR. PULKIT DUBEY
+          (DIRECTOR, EINFOCHIPS)</div></div>
+      <div class="hexagon"><img src="./images/manish-600x300-1.jpg" alt="Guest 2">
+        <div class="overlay">MR. MANISH JOSHI
+          (M.D,UMANG ENGINEERING)</div></div>
+      <div class="hexagon"><img src="./images/zed.jpeg" alt="Guest 3">
+        <div class="overlay">MR. ANSHUL AGRAWAL
+          (DIRECTOR, ZEDBLACK, MDPH)</div></div>
+    </div>
+    <div class="hex-row">
+      <div class="hexagon"><img src="./images/scientech.jpeg" alt="Guest 4">
+        <div class="overlay">MR. AMREESH KAILA
+          (DIRECTOR, SIENTECH)</div></div>
+      <div class="hexagon"><img src="./images/parkhya.jpeg" alt="Guest 5">
+        <div class="overlay">MR. SWAPNIL PARAKHYA
+          (PARAKHYA SOLUTION PVT.LTD)</div></div>
+      <div class="hexagon"><img src="./images/technido.jpeg" alt="Guest 6">
+        <div class="overlay">MR. SIDDHRATH DEV
+          (FOUNDER, TECHNIDO)</div></div>
+      <div class="hexagon"><img src="./images/shree.jpeg" alt="Guest 7">
+        <div class="overlay">MR. SHREE SETH
+          (SHREE PACETRONIX)</div></div>
+    </div>
+    <div class="hex-row">
+      <div class="hexagon"><img src="./images/worldpay.jpg" alt="Guest 8">
+        <div class="overlay">MR. VIJAY PATWA
+          (WORLD PAY)</div></div>
+      <div class="hexagon"><img src="./images/paras.jpeg" alt="Guest 9">
+        <div class="overlay">PARAS DEFENCE</div></div>
+      <div class="hexagon"><img src="./images/dhruva.jpeg" alt="Guest 10">
+        <div class="overlay">DHRUVA SPACE</div></div>
+    </div>
+    <div class="hex-row">
+      <div class="hexagon"><img src="./images/vecv.jpeg" alt="Guest 11">
+        <div class="overlay">VE POWER TRAIL</div></div>
+      <div class="hexagon"><img src="./images/caparo.jpeg" alt="Guest 12">
+        <div class="overlay">CAPARO ENGINEERING INDIA LTD</div></div>
+    </div>
+  </div>
+  <footer class="tech-indigo-footer mt-5 pt-4" >
+    <div class="footer-left" id="contact">
+      <p>📧 Gmail: techindigo@example.com</p>
+      <p>📞 Contact: +919131040322</p>
+    </div>
+    <div class="footer-center">
+      <img src="Component 1.png" alt="Tech Indigo Logo" class="footer-logo">
+    </div>
+    <div class="footer-right">
+      <p>Follow Us:</p>
+      <div class="social-icons">
+        
+        
+        <a href="https://www.instagram.com/soi_iot_davv/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+<div>
+  <p>© 2025 Tech Indigo. All rights reserved.</p>
+  <a href="https://www.linkedin.com/in/hpishwe/" class="text-decoration-none">
+    <br>
+    <p>Created By Harshita Pishwe with <i class="fa-solid fa-heart" style="color: #f90b3b;"></i></p>
+  </a>
+</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
