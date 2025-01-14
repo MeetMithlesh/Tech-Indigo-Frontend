@@ -38,5 +38,37 @@ function showText(element) {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const countdownDate = new Date("February 2, 2025 11:00:00").getTime();
+    const daysElement = document.querySelector(".days");
+    const hoursElement = document.querySelector(".hours");
+    const minutesElement = document.querySelector(".minutes");
+    const secondsElement = document.querySelector(".seconds");
+  
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const timeLeft = countdownDate - now;
+  
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  
+        daysElement.textContent = days.toString().padStart(2, '0');
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+      } else {
+        clearInterval(interval);
+        document.querySelector(".tech-countdown-wrapper").innerHTML = `<h2>The Event Has Started!</h2>`;
+      }
+    };
+  
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+  });
+  
+  
   
   

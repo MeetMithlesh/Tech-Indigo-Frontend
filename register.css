@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(115deg, #032356 0%, #1B0D4A 50%, #270D5C 100%);
+
+}
+
+.registration-header{
+    text-align: center;
+    color: white;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.registration-form iframe{
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+}

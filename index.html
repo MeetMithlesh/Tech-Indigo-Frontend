@@ -8,10 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./images/fav-icon.jpg" type="image/x-icon">
   <title>Tech Indigo</title>
   <style>
     
@@ -29,6 +28,7 @@
       <a class="navbar-brand" href="#"></a>
       <!-- Desktop View Buttons -->
       <div class="d-none d-md-flex">
+        <a class="nav-link" href="./register.html">Register</a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#events">Events</a>
         <a class="nav-link" href="#guests">Guests</a>
@@ -46,6 +46,9 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item text-white ">
+              <a class="nav-link" href="./register.html">Register</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -73,6 +76,32 @@
     <h1 class="main-title">SPECTRUM OF INNOVATIONS</h1>
     <p class="sub-title">HOSTED BY SCHOOL OF INSTRUMENTATION, DAVV</p>
   </div>
+  <div class="tech-countdown-wrapper">
+    <h2>Big Day Loading… Are You Ready?</h2>
+    <div class="tech-countdown">
+      <div class="time-unit">
+        <span class="number days">00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="time-unit">
+        <span class="number hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="time-unit">
+        <span class="number minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="time-unit">
+        <span class="number seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+  </div> 
+  
+  <div class=" register-tag d- justify-content-center">
+    <a href="./register.html" class="btn btn-outline-primary btn-lg">Register Now</a>
+  </div>
+  
   <div class="mission-container pt-4 mt-5" id="about">
     <h2 class="mission-title pt-2">OUR MISSION</h2>
     <div class="mission-grid pt-4 pb-5">
@@ -107,8 +136,8 @@
     </div>
   </div>
   
-<h1 class="h1 flex justify-content-center text-white mt-5 pt-4" id="events">Event Timeline</h1>
-  <div class="timeline">
+<h1 class="h1 d-flex justify-content-center text-white mt-5 pt-4 " id="events">Event Timeline</h1>
+  <div class="timeline mb-5">
     <div class="line"></div>
     <div class="timeline-item" data-trigger>
       <div class="dot"></div>
@@ -153,6 +182,27 @@
       </div>
     </div>
   </div>
+
+<section>
+  <div class="registration-part">
+    <div class="register-content">
+      <p class="h3">Hurry! Up Let’s be Part of TechIndigo 2025!</p>
+      <p>
+  
+        —where innovation meets inspiration! This is your chance to join a vibrant community of visionaries, creators, and tech enthusiasts.  
+        
+        Get ready to experience a once-in-a-lifetime opportunity to listen to the most renowned industrial leaders as they share their knowledge, insights, and success stories.  
+        
+        Register now to secure your spot—limited registrations available and filling fast! Don’t miss out on this transformative journey.  
+      
+        </p>
+        <a href="./register.html" class="btn btn-primary btn-lg">Register Now</a>
+    </div>
+    <div class="register-content-img">
+      <img src="https://i0.wp.com/techsummit.tech/wp-content/uploads/2023/04/Untitled-design-3.png?ssl=1" alt="">
+    </div>
+  </div>
+</section>
 
   <div class="honeycomb-container" id="guests">
     <h1 class="h1 text-white pb-5">MEET OUR PIONEER INNOVATORS</h1>
