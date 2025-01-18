@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .container-main {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 100vh;
+        }
+        .developers-container {
+            max-width: 300px;
+            height: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            background-color: #071b3b;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .developer {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .developer img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .developer h3 {
+            margin: 20px;
+            text-align: center;
+        }
+        .developer p {
+            margin: 0;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-size: x-large;
+            transition: transform 3s ease;
+        }
+        .social-links :hover {
+            transform: scale(1.2);
+        }
+        .social-links a {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container-main {
+                flex-direction: column;
+            }
+            .developers-container {
+                margin-bottom: 20px;
+            }
+            .developer img {
+                width: 150px;
+                height: 150px;
+            }
+            .developers-container {
+                max-width: 250px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Developers</h2>
+    <div class="container-main">
+        <div class="developers-container">
+            <div class="developer">
+                <img src="/images/developer1.png" alt="Developer 1">
+                <div>
+                    <h3>Harshita Pishwe</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hpishwe/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/hpishwe"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="developers-container">
+            <div class="developer">
+                <img src="/images/developer2.png" alt="Developer 2">
+                <div>
+                    <h3>Mithlesh Saini</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/meethp/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MeetMithlesh"><i class="fab fa-github"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

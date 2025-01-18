@@ -1,13 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(115deg, #032356 0%, #1B0D4A 50%, #270D5C 100%);
-
-}
 
 .registration-header{
     text-align: center;
@@ -15,15 +5,209 @@ body{
 }
 
 .registration-form {
-    display: flex;
-    justify-content: center;
-    width: auto;
+    /* display: flex;
+    justify-content: center; */
+    width: 60%;
+    color: white;
 }
 
-.registration-form iframe{
-    background-color: white;
-    border-radius: 15px;
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    /* background: white; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
     margin-bottom: 10px;
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .container input {
+    width: 100%;
     padding: 10px;
-    overflow: hidden;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: white;
+  }
+
+ .container input:focus {
+        outline: none;
+        border-color: #0053ad;
+        background-color: transparent;
+        color: white;
+    }
+
+.container input::placeholder {
+    color: white;   
+}
+
+option{
+    background-color: #071b3b;
+}
+
+  ul {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #071b3b;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+  }
+
+  ul.visible {
+    display: block;
+  }
+
+  ul li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  ul li:hover {
+    background: #007bff;
+    color: white;
+  }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.coupon-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.coupon-input {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.coupon-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.coupon-container input {
+    padding-right: 80px;
+}
+
+.coupon-container button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.coupon-container button:hover {
+    background-color: #0056b3;
+}
+
+#fee-breakup {
+    margin-top: 20px;
+    padding: 15px;
+    /* background: #071b3b; */
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid #ccc;
+}
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    animation: popup-animation 0.3s ease-out;
+}
+
+.popup-content p {
+    font-size: 16px;
+    margin: 0 0 20px;
+    color: #333;
+}
+
+.popup-content button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide the popup */
+.hidden {
+    display: none;
+}
+
+/* Popup Animation */
+@keyframes popup-animation {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
