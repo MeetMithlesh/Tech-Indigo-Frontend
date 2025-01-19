@@ -143,7 +143,7 @@
       })
       .then(response => response.json())
       .then(data => {
-        console.log('Answers submitted:', data);
+        // console.log('Answers submitted:', data);
         alert('Your answers have been submitted!');
         
         // Display the discount
@@ -167,7 +167,7 @@
         }else {
             var discountQueryParam = '';
         }
-        const registerUrl = `/api/register${discountQueryParam}`;
+        const registerUrl = `/register.html${discountQueryParam}`;
 
         // Redirect to /api/register with discount query parameter after 3 seconds
         setTimeout(() => {
