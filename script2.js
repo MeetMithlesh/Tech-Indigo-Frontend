@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://tech-indigo-backend.vercel.app';
+const API_BASE_URL = 'https://tech-indigo-backend.onrender.com';
 
 // Code for the registration form
 function filterOptions(type) {
