@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://tech-indigo-backend.vercel.app';
 
 // Code for the registration form
 function filterOptions(type) {

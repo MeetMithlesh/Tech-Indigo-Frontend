@@ -72,7 +72,7 @@
 
   <script>
     let correctAnswers = []; // To store correct answers from the backend
-    const API_BASE_URL = 'http://localhost:3000';
+    const API_BASE_URL = 'https://tech-indigo-backend.vercel.app';
     // Fetch random questions and correct answers from the backend
     fetch(`${API_BASE_URL}/api/random-questions`)
       .then(response => response.json())
