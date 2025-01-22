@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://tech-indigo-backend.onrender.com';
+const API_BASE_URL = 'http://localhost:3000';
 
 // Code for the registration form
 function filterOptions(type) {
@@ -59,10 +59,11 @@ const couponInput = document.getElementById("coupon");
 const popup = document.getElementById("coupon-popup");
 const popupMessage = document.getElementById("popup-message");
 const closePopup = document.getElementById("close-popup");
-const registrationFee = 1000;
+const registrationFee = 200;
 const couponCodes = {
   IOTSTUDENT: registrationFee,
-  SOI50: 500,
+  SOI80:160,
+  SOI50: 100,
 };
 let appliedCoupon = null;
 
@@ -84,7 +85,7 @@ applyButton.addEventListener("click", () => {
     couponInput.disabled = true;
     applyButton.innerText = "Applied";
     updateFeeBreakdown(couponCodes[couponCode]);
-    showPopup('Congratulations! You have won a 100% discount.(Benfit of being a student of IOT)');
+    showPopup(`Coupon Applied Successfully!`);
   } else if (couponCode) {
     // Invalid coupon
     showPopup("Invalid coupon code. Please try again.");
@@ -122,7 +123,26 @@ function couponApplied() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const couponCode = urlParams.get('couponCode');
+    const name = decodeURIComponent(urlParams.get('name'));
+    const email = decodeURIComponent(urlParams.get('email'));
+    const phone = decodeURIComponent(urlParams.get('phone'));
+    const year = decodeURIComponent(urlParams.get('year'));
+    const college = decodeURIComponent(urlParams.get('college'));
+    const course = decodeURIComponent(urlParams.get('course'));
+    const address = decodeURIComponent(urlParams.get('address'));
+    const couponCodeRaw = decodeURIComponent(urlParams.get('couponCode'));
+    const couponCode = new URLSearchParams(couponCodeRaw).get('couponCode');
+
+    if(name | email | phone|year |college |course |address){
+        document.getElementById('name').value = name;
+        document.getElementById('email').value = email;
+        document.getElementById('phone').value = phone;
+        document.getElementById('year').value = year;
+        document.getElementById('college-input').value = college;
+        document.getElementById('course-input').value = course;
+        document.getElementById('address').value = address;
+    }
+
     if (couponCode) {
         document.getElementById('coupon').value = couponCode;
         applyCoupon(couponCode);
@@ -137,33 +157,33 @@ function applyCoupon(couponCode) {
         showPopup('Sorry! You have not won any discount. Better luck next time.');
         updateFeeBreakdown(discount);
         couponApplied();
-    } else if (couponCode === 'DISCOUNT15') {
-        discount = registrationFee * 0.15; // 15% discount
-        showPopup('Congratulations! You have won a 15% discount.');
+    } else if (couponCode === 'DISCOUNT10') {
+        discount = registrationFee * 0.10; // 15% discount
+        showPopup('Congratulations! You have won a 10% discount.');
+        updateFeeBreakdown(discount);
+        couponApplied();
+    } else if (couponCode === 'DISCOUNT20') {
+        discount = registrationFee * 0.20; // 30% discount
+        showPopup('Congratulations! You have won a 20% discount.');
         updateFeeBreakdown(discount);
         couponApplied();
     } else if (couponCode === 'DISCOUNT30') {
-        discount = registrationFee * 0.30; // 30% discount
+        discount = registrationFee * 0.30; // 45% discount
         showPopup('Congratulations! You have won a 30% discount.');
         updateFeeBreakdown(discount);
         couponApplied();
-    } else if (couponCode === 'DISCOUNT45') {
-        discount = registrationFee * 0.45; // 45% discount
-        showPopup('Congratulations! You have won a 45% discount.');
+    } else if (couponCode === 'DISCOUNT40') {
+        discount = registrationFee * 0.40; // 60% discount
+        showPopup('Congratulations! You have won a 40% discount.');
         updateFeeBreakdown(discount);
         couponApplied();
-    } else if (couponCode === 'DISCOUNT60') {
-        discount = registrationFee * 0.60; // 60% discount
-        showPopup('Congratulations! You have won a 60% discount.');
-        updateFeeBreakdown(discount);
-        couponApplied();
-    } else if (couponCode === 'DISCOUNT75') {
-        discount = registrationFee * 0.75; // 75% discount
-        showPopup('Congratulations! You have won a 75% discount.');
+    } else if (couponCode === 'DISCOUNT50') {
+        discount = registrationFee * 0.50; // 75% discount
+        showPopup('Congratulations! You have won a 50% discount.');
         updateFeeBreakdown(discount);
         couponApplied();
     } else {
-        showPopup('Invalid coupon code. Please try again.');
+        showPopup('....Invalid Coupon Code. Please Try Again.');
         return;
     }
 
@@ -215,7 +235,22 @@ document.getElementById('registration-form').addEventListener('submit', async (e
             }, 1000);
         }
     } catch (err) {
-        console.error(err);
+        console.log(err);
         errorContainer.textContent = 'Failed to connect to the server. Please try again.';
     }
 });
+
+document.getElementById('quiz-link').addEventListener('click',async (e) => {
+    e.preventDefault();
+
+    input_name = document.getElementById('name').value;
+    input_email = document.getElementById('email').value;
+    input_phone = document.getElementById('phone').value;
+    input_year = document.getElementById('year').value;
+    input_college = document.getElementById('college-input').value;
+    input_course = document.getElementById('course-input').value;
+    input_add = document.getElementById('address').value;
+
+    const query = `./quiz.html?name=${encodeURIComponent(input_name)}&email=${encodeURIComponent(input_email)}&phone=${encodeURIComponent(input_phone)}&year=${encodeURIComponent(input_year)}&college=${encodeURIComponent(input_college)}&course=${encodeURIComponent(input_course)}&address=${encodeURIComponent(input_add)}`;
+    window.location.href = query;
+})

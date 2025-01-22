@@ -98,8 +98,9 @@
             oninput="filterOptions('college')"
             autocomplete="off" 
             name="college"
-          />
-          <ul id="college-dropdown">
+            />
+            <ul id="college-dropdown">
+            <li onclick="selectOption('college', this)"> School of Instrumentation (INST)</li>
             <li onclick="selectOption('college', this)">Indian Institute of Technology Indore (IITI)</li>
             <li onclick="selectOption('college', this)">National Institute of Technology (NIT)</li>
             <li onclick="selectOption('college', this)">Vellore Institute of Technology (VIT)</li>
@@ -115,7 +116,6 @@
             <li onclick="selectOption('college', this)"> School of Education (EDU)</li>
             <li onclick="selectOption('college', this)"> School of Electronics (ELEX)</li>
             <li onclick="selectOption('college', this)"> School of Energy & Environmental Studies (SEES)</li>
-            <li onclick="selectOption('college', this)"> School of Instrumentation (INST)</li>
             <li onclick="selectOption('college', this)"> School of Journalism & Mass Communication (SJMC)</li>
             <li onclick="selectOption('college', this)"> School of Law (LAW)</li>
             <li onclick="selectOption('college', this)"> School of Life Sciences (SLS)</li>
@@ -180,15 +180,15 @@
           </div>
          
       </div>
-      <a href="./quiz.html" id="quiz-link">Get Discount here!!</a>
+      <a href="#" id="quiz-link">Get Discount here!!</a>
       <div id="fee-breakup">
-          <p>Registration Fee: <span id="registration-fee">₹1000</span></p>
+          <p>Registration Fee: <span id="registration-fee">₹200</span></p>
           <p>Discount: <span id="discount">₹0</span></p>
-          <p>Total: <span id="total">₹1000</span></p>
+          <p>Total: <span id="total">₹200</span></p>
       </div>    
         <div class="form-check form-switch">
           <input class="form-check-input bg-blue" type="checkbox" id="flexSwitchCheckDefault" required>
-          <label class="form-check-label" for="flexSwitchCheckDefault">I agree to the <a href="#">Terms and Conditions</a></label>
+          <label class="form-check-label" for="flexSwitchCheckDefault">I agree to the <a href="./terms.html" id="T&C">Terms and Conditions</a></label>
         </div>
       <div class="d-flex justify-content-center">
         <button type="submit" class="btn btn-outline-primary btn-lg">Register</button>
@@ -232,6 +232,9 @@
     </a> -->
   </div>
     </footer>
-      <script src="/script2.js"></script>
+      <script src="/script2.js">
+
+
+      </script>
 </body>
 </html>
