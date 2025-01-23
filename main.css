@@ -325,7 +325,7 @@
 
 .timeline-item .content {
   position: absolute;
-  background: #00fbff;
+  background: #a5e9fb ;
   padding: 15px;
   border-radius: 5px;
   width: 40%;
@@ -333,6 +333,8 @@
   left: calc(50% + 30px);
   transform: scale(1);
   transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 150, 200, 0.7), 
+              0 0 30px rgba(0, 150, 200, 0.5);
 }
 
 .timeline-item:nth-child(even) .content {
@@ -353,6 +355,9 @@
 
 .timeline-item .content:hover {
   transform: scale(1.1); /* Hover to scale up the box */
+  box-shadow: 0 0 25px rgba(0, 150, 200, 1), 
+  0 0 50px rgba(0, 150, 200, 0.8), 
+  0 0 75px rgba(0, 150, 200, 0.6);
 }
 
 .register-tag{
@@ -397,6 +402,7 @@
 
   .register-content-img img {
     height: 50%;
+    align-items: center;
   }
 }
 
